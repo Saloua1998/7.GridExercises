@@ -1,0 +1,11 @@
+main {
+  position: relative;
+}
+button {
+  background-color: greenyellow;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1em;
+}

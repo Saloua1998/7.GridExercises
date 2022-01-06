@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+}
+body > * {
+  border: red 0.2em solid;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
