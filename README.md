@@ -1,6 +1,6 @@
 # GridExercises
 
-# Time Spend(0H)
+# Time Spend(1H)
 
 # Description
 
@@ -17,6 +17,7 @@ Exercises are from: https://www.freecodecamp.org/news/learn-css-grid-by-building
 # Learned:
 
 - body > \*: Selects all the children of body. This way I can give them all a red border
+- grid-column: 2 / span 4; (This column will be spread from column 2 to 6, only if the parent has grid-template-columns: repeat((6 or more), 1fr);)
 
 # Improvement points:
 
