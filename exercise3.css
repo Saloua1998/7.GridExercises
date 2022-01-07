@@ -1,0 +1,65 @@
+.task3 > * {
+  border: red 0.2em solid;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+.task3 {
+  display: grid;
+  height: calc(100vh - 2em);
+  grid-template-rows: auto auto 1fr auto auto auto;
+  gap: 1em;
+  margin: 1em 0;
+}
+.item1 {
+  grid-column: 2 / span 4;
+}
+.item2 {
+  grid-column: 6 / span 6;
+}
+
+/* Tablet */
+@media (min-width: 720px) {
+  .task3 {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+  }
+  .task3 header {
+    grid-column: 1 / span 12;
+  }
+  .task3 nav {
+    grid-column: 1 / span 12;
+  }
+  .task3 main {
+    grid-column: 3 / span 10;
+  }
+  .task3 .sidebar {
+    grid-column: 1 / span 2;
+    grid-row: 3; /* grid row will start at 3 with main */
+  }
+  .task3 .ads {
+    grid-column: 1 / span 2;
+  }
+  .task3 footer {
+    grid-column: 3 / span 10;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1020px) {
+  .task3 nav {
+    grid-column: 3 / span 8;
+  }
+  .task3 main {
+    grid-column: 3 / span 8;
+  }
+  .task3 .sidebar {
+    grid-row: 2 / 4;
+  }
+  .task3 .ads {
+    grid-column: 11 / span 2;
+    grid-row: 2 / 4;
+  }
+  .task3 footer {
+    grid-column: 1 / span 12;
+  }
+}
