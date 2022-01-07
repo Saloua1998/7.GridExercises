@@ -1,9 +1,9 @@
-.task4 > * {
+.task3 > * {
   border: red 0.2em solid;
   border-radius: 0.5em;
   padding: 0.5em;
 }
-.task4 {
+.task3 {
   display: grid;
   height: calc(100vh - 2em);
   gap: 1em;
@@ -18,28 +18,28 @@
     "footer";
 }
 
-.task4 header {
+.task3 header {
   grid-area: header;
 }
-.task4 nav {
+.task3 nav {
   grid-area: nav;
 }
-.task4 .ads {
+.task3 .ads {
   grid-area: ads;
 }
-.task4 .sidebar {
+.task3 .sidebar {
   grid-area: sidebar;
 }
-.task4 main {
+.task3 main {
   grid-area: main;
 }
-.task4 footer {
+.task3 footer {
   grid-area: footer;
 }
 
 /* Tablet */
 @media (min-width: 720px) {
-  .task4 {
+  .task3 {
     grid-template-rows: auto auto 1fr auto;
 
     grid-template-areas:
@@ -52,13 +52,30 @@
 
 /* Desktop */
 @media (min-width: 1020px) {
-  .task4 {
+  .task3 {
     grid-template-rows: auto auto 1fr auto;
 
     grid-template-areas:
-      "header header header header"
-      "sidebar nav nav ads "
-      "sidebar main main ads"
-      "footer footer footer footer";
+      "header header header"
+      "sidebar nav ads "
+      "sidebar main ads"
+      "footer footer footer";
   }
+
+  /* .task3 nav {
+    grid-column: 3 / span 8;
+  }
+  .task3 main {
+    grid-column: 3 / span 8;
+  }
+  .task3 .sidebar {
+    grid-row: 2 / 4;
+  }
+  .task3 .ads {
+    grid-column: 11 / span 2;
+    grid-row: 2 / 4;
+  }
+  .task3 footer {
+    grid-column: 1 / span 12;
+  } */
 }
